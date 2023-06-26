@@ -32,7 +32,7 @@ public class FileController {
 
     @PostMapping("/upload")
     public ResponseEntity<?> uploadFile(@ModelAttribute("file") MultipartFile file) {
-        return ResponseEntity.ok(fileService.uploadImage(file));
+        return ResponseEntity.ok(fileService.uploadFile(file));
     }
 
     @GetMapping("/download/{id}")

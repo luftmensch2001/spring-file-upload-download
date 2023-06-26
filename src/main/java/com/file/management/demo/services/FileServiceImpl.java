@@ -35,7 +35,7 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public FileEntity uploadImage(MultipartFile file) {
+    public FileEntity uploadFile(MultipartFile file) {
         try {
             String fileName = StringUtils.cleanPath(file.getOriginalFilename());
             FileEntity newFile = new FileEntity(fileName, file.getContentType(), file.getBytes());
