@@ -22,6 +22,7 @@ public class FileController {
     public ResponseEntity<?> getAllFiles() {
         return ResponseEntity.ok(fileService.getAllFiles());
     }
+
     @GetMapping("/getFileById/{id}")
     public ResponseEntity<FileEntity> getFileById(@PathVariable Integer id) {
         FileEntity foundFile = fileService.getFileById(id);

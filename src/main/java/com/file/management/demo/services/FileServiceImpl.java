@@ -20,6 +20,7 @@ import static org.springframework.web.servlet.function.RequestPredicates.content
 public class FileServiceImpl implements FileService {
     @Autowired
     private FileRepository fileRepository;
+
     @Override
     public Iterable<FileEntity> getAllFiles() {
         return fileRepository.findAll();

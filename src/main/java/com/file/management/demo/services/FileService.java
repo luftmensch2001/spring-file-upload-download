@@ -8,8 +8,10 @@ import java.util.Optional;
 
 public interface FileService {
     public Iterable<FileEntity> getAllFiles();
+
     public FileEntity getFileById(Integer id);
-    public FileEntity uploadFile(MultipartFile file);
+
     public ResponseEntity<?> downloadFile(Integer id);
+
     public void deleteFile(Integer id);
 }
